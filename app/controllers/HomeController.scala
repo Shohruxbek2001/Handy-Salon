@@ -13,12 +13,24 @@ import javax.inject._
 
 @Singleton
 class HomeController @Inject()(val controllerComponents: ControllerComponents,
-                               indexPage: views.html.index,
+                               loginPage: views.html.login,
+                               registerPage: views.html.register,
+                               notFoundPage: views.html.notFound,
+                               dashboardPage: views.html.dashboard,
                                implicit val actorSystem: ActorSystem,
                                implicit val webJarsUtil: WebJarsUtil)
   extends BaseController {
 
-  def index: Action[AnyContent] = Action {
-    Ok(indexPage())
+  def login: Action[AnyContent] = Action {
+    Ok(loginPage())
+  }
+  def register: Action[AnyContent] = Action {
+    Ok(registerPage())
+  }
+  def notFound: Action[AnyContent] = Action {
+    Ok(notFoundPage())
+  }
+  def dashboard: Action[AnyContent] = Action {
+    Ok(dashboardPage())
   }
 }

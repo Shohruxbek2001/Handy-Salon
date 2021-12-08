@@ -13,12 +13,26 @@
         @webJarsUtil.locate("toastr.css").css()
         @webJarsUtil.locate("jquery.js").script()
         @webJarsUtil.locate("js/bootstrap.min.js").script()
+        @webJarsUtil.locate("js/bootstrap.bundle.min.js").script()
         @webJarsUtil.locate("jquery.blockUI.js").script()
         @webJarsUtil.locate("knockout.js").script()
         @webJarsUtil.locate("knockout.mapping.js").script()
         @webJarsUtil.locate("dist/jquery.mask.min.js").script()
         @webJarsUtil.locate("jquery.blockUI.js").script()
         @webJarsUtil.locate("toastr.js").script()
+            <!-- Favicons -->
+        <link href="@routes.Assets.versioned("handy/img/favicon.png")" rel="icon">
+        <link href="@routes.Assets.versioned("handy/img/apple-touch-icon.png")" rel="apple-touch-icon">
+            <!-- Google Fonts -->
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+            <!-- Vendor CSS Files -->
+        <link href="@routes.Assets.versioned("handy/vendor/bootstrap-icons/bootstrap-icons.css")" rel="stylesheet">
+        <link href="@routes.Assets.versioned("handy/vendor/boxicons/css/boxicons.min.css")" rel="stylesheet">
+            <!-- Template Main CSS File -->
+        <link href="@routes.Assets.versioned("handy/css/style.css")" rel="stylesheet">
+            <!-- Template Main JS File -->
+        <script src="@routes.Assets.versioned("handy/js/main.js")"></script>
     </head>
     <body>
         @content

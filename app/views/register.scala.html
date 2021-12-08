@@ -1,0 +1,128 @@
+@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@main("Register page", webJarsUtil) {
+    <main>
+        <div class="container">
+
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+                                <a href="/" class="logo d-flex align-items-center w-auto">
+                                    <img src="@routes.Assets.versioned("handy/img/logo.png")" alt="">
+                                    <span class="d-none d-lg-block">HandySalon</span>
+                                </a>
+                            </div><!-- End Logo -->
+
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Ro'yhatdan o'tish</h5>
+                                    </div>
+
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-12">
+                                            <label for="yourName" class="form-label">Ism</label>
+                                            <input type="text" name="name" class="form-control" id="yourName" required>
+                                            <div class="invalid-feedback">Iltimos, ismingizni kiriting!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourName" class="form-label">Familiya</label>
+                                            <input type="text" name="name" class="form-control" id="yourName" required>
+                                            <div class="invalid-feedback">Please, enter your name!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourEmail" class="form-label">Email</label>
+                                            <input type="email" name="email" class="form-control" id="yourEmail" required>
+                                            <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourUsername" class="form-label">Login</label>
+                                            <input type="text" name="username" class="form-control" id="yourUsername" required>
+                                            <div class="invalid-feedback">Please choose a username.</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourPassword" class="form-label">Parol</label>
+                                            <input type="password" name="password" class="form-control" id="yourPassword" required>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourWorkTime" class="form-label">Ish vaqti</label>
+                                            <div class="row" id="yourWorkTime">
+                                                <div class="col-md-6">
+                                                    <input type="time" name="onTime" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="time" name="offTime" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourDinnerTime" class="form-label">Tushlik vaqti</label>
+                                            <div class="row" id="yourDinnerTime">
+                                                <div class="col-md-6">
+                                                    <input type="time" name="onTime" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="time" name="offTime" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourHaircutTime" class="form-label">Soch olish uchun kerak vaqti</label>
+                                            <input type="time" name="needToHair" class="form-control" id="yourHaircutTime" required>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourBeardscutTime" class="form-label">Soqol olish uchun kerak vaqti</label>
+                                            <input type="time" name="needToHair" class="form-control" id="yourHaircutTime" required>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                                                <label class="form-check-label" for="acceptTerms">Foydalanish <a href="#">shart</a>lariga roziman</label>
+                                                <div class="invalid-feedback">You must agree before submitting.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100" type="submit">Ro'yhatdan o'tish</button>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="small mb-0"><a href="/">Log in</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="credits">
+                                    Designed by <a href="#">Erasoft.uz</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+}
