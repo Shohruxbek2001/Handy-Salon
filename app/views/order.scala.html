@@ -1,0 +1,112 @@
+@this(webJarsUtil: org.webjars.play.WebJarsUtil)
+@main("Order page", webJarsUtil) {
+    <main>
+        <div class="container">
+
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                            <div class="d-flex justify-content-center py-4">
+                                <img src="@routes.Assets.versioned("handy/img/logo.png")" alt="" width="50">
+                                <a href="/" class="logo d-flex align-items-center w-auto">
+                                    <span class="d-none d-lg-block">HandySalon</span>
+                                </a>
+                            </div><!-- End Logo -->
+
+                            <div class="card mb-3">
+
+                                <div class="card-body">
+
+                                    <div class="pt-4 pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Navbat olish</h5>
+                                    </div>
+
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-12">
+                                            <label for="yourName" class="form-label">Ism</label>
+                                            <input type="text" name="name" class="form-control" id="yourName" required>
+                                            <div class="invalid-feedback">Iltimos, ismingizni kiriting!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="yourName" class="form-label">Familiya</label>
+                                            <input type="text" name="name" class="form-control" id="yourName" required>
+                                            <div class="invalid-feedback">Please, enter your name!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="phone" class="form-label">Telefon</label>
+                                            <input type="text" name="name" class="form-control" id="phone" required>
+                                            <div class="invalid-feedback">Please, enter your phone!</div>
+                                        </div>
+
+                                        <div class="col-6 my-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="hair">
+                                                <label class="form-check-label" for="hair">Soch</label>
+                                                <div class="invalid-feedback">You must agree!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 my-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="moustache">
+                                                <label class="form-check-label" for="moustache">Soqol</label>
+                                                <div class="invalid-feedback">You must agree!</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <select name="region" id="region" class="form-control mb-3">
+                                                <option value="">Xorazm</option>
+                                                <option value="">Buxoro</option>
+                                                <option value="">Toshkent</option>
+                                                <option value="">Andijon</option>
+                                                <option value="">Samarqand</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <select id="state" class="form-control mb-3">
+                                                <option value="">Urganch</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <select id="salon" class="form-control mb-3">
+                                                <option value="">Babayev Shohruh</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100" type="submit">Tashdiqlash</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="credits">
+                                    Designed by <a href="#">Erasoft.uz</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main><!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+}

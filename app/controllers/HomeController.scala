@@ -17,6 +17,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents,
                                registerPage: views.html.register,
                                notFoundPage: views.html.notFound,
                                dashboardPage: views.html.dashboard,
+                               orderPage: views.html.order,
                                implicit val actorSystem: ActorSystem,
                                implicit val webJarsUtil: WebJarsUtil)
   extends BaseController {
@@ -32,5 +33,8 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents,
   }
   def dashboard: Action[AnyContent] = Action {
     Ok(dashboardPage())
+  }
+  def order: Action[AnyContent] = Action {
+    Ok(orderPage())
   }
 }
